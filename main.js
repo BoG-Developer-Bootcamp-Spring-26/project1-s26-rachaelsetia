@@ -25,7 +25,8 @@ const typeColorMap = new Map([
     ["dragon", "#6F35FC"],
     ["dark", "#705746"],
     ["steel", "#B7B7CE"],
-    ["fairy", "#D685AD"]
+    ["fairy", "#D685AD"],
+    [null, null]
 ]);
 
 // Displays Bulbasaur on load
@@ -53,7 +54,12 @@ async function loadPokemon(id) {
     pokeName.textContent = data.species.name;
 
     type1String = data.types[0].type.name;
+    type2String = null;
+
+    if (data.types[1]) {
     type2String = data.types[1].type.name;
+    }
+
     type1.textContent = type1String;
     type2.textContent = type2String;
     type1.style.backgroundColor = typeColorMap.get(type1String);
