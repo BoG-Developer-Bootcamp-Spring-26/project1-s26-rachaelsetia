@@ -3,19 +3,39 @@ html {
 }
 
 h1 {
-    font-weight: 700;
+    font-weight: 700px;
     font-style: bold;
     font-size: 64px;
     text-align: center;
 }
 
-#left-col {
+h2 {
+    font-weight: 700px;
+    font-style: bold;
+    font-size: 36px;
+    text-align: center;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-col {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+    margin: 0rem 5rem 0rem 10rem;
+}
+
+.right-col {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: fit-content;
-    margin: 0rem 10rem;
+    margin: 0rem 10rem 0rem 5rem;
 }
 
 #poke-sprite {
@@ -49,7 +69,7 @@ h1 {
 }
 
 #types-title {
-    font-weight: 700;
+    font-weight: 700px;
     font-style: bold;
     font-size: 24px;
     width: 463px;
@@ -65,7 +85,7 @@ h1 {
     text-align: center;
 }
 
-#prev-next-buttons {
+.side-by-side-buttons {
     display: flex;
     flex-direction: row;
 }
@@ -81,6 +101,13 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 400px;
+    font-size: 36px;
+    
+}
+
+#info-moves-buttons {
+    margin-top: 4rem;
 }
 
 .arrow {
@@ -88,6 +115,29 @@ h1 {
     height: 61px;
 }
 
-#next {
+#next-button {
     rotate: 180deg;
+}
+
+#info-box {
+    background-color: #E8E8E8;
+    width: 486px;
+    height: 598px;
+    font-weight: 400px;
+    font-size: 36px;
+    line-height: 0.5rem;
+}
+
+#info-box-header {
+    margin-top: 0;
+}
+
+#bio-info {
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+#moves {
+    margin-left: 2rem;
+    margin-top: 2rem;
 }
