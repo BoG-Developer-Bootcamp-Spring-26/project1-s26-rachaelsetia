@@ -1,5 +1,8 @@
 # Project 1 — Mini Pokédex
 
+# Video Submission
+https://drive.google.com/file/d/1lchX_ivHgNAGPD23TMl7aouvwC8xMdvQ/view?usp=sharing
+
 ## Description
 In this project, you'll be creating a frontend that graphically displays Pokémon information (similiar to a Pokédex). To fetch all the necessary information, you'll be working with the [PokeAPI](https://pokeapi.co/docs/v2#pokemon).
 
