@@ -142,8 +142,7 @@ function displayInfo() {
     moves.style.display = "none";
     bioInfo.style.display = "block";
 
-    // reset box height
-    infoBox.style.height = "598px";
+    infoBox.style.overflow = "visible";
     
 }
 
@@ -174,9 +173,9 @@ function displayMoves() {
 
     // adapts box height
     if (fMoves.length > 12) {
-        infoBox.style.height = "fit-content";
+        infoBox.style.overflow = "scroll";
     } else {
-        infoBox.style.height = "598px";
+        infoBox.style.overflow = "visible";
     }
 }
 
